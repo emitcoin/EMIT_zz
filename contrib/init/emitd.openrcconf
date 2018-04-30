@@ -1,0 +1,26 @@
+# /etc/conf.d/emitd: config file for /etc/init.d/emitd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/emit/emit.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/emitd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/emitd.pid"
+
+# Where to write emitd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/emitd"
+
+# User and group to own emitd process
+#BITCOIND_USER="emit"
+#BITCOIND_GROUP="emit"
+
+# Path to emitd executable
+#BITCOIND_BIN="/usr/bin/emitd"
+
+# Nice value to run emitd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

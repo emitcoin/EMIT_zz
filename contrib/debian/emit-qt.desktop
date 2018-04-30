@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=EMIT
+Comment=EMIT P2P Cryptocurrency
+Comment[fr]=EMIT, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=EMIT, eşten eşe kriptografik sanal para birimi
+Exec=emit-qt %u
+Terminal=false
+Type=Application
+Icon=emit128
+MimeType=x-scheme-handler/emit;
+Categories=Office;Finance;
