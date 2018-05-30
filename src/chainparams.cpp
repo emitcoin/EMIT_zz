@@ -111,7 +111,7 @@ public:
 	nRejectBlockOutdatedMajority = 950;
 	nToCheckBlockUpgradeMajority = 1000;
 
-	const char* pszTimestamp = "BBC 30/12/2018 Key Italy talks amid fears of snap poll";
+	const char* pszTimestamp = "BBC 30/05/2018 Key Italy talks amid fears of snap poll";
 	CMutableTransaction txNew;
 	txNew.vin.resize(1);
 	txNew.vout.resize(1);
@@ -133,7 +133,7 @@ public:
 	vSeeds.push_back(CDNSSeedData("thesnoot.space", "emit.thesnoot.space"));
 	vSeeds.push_back(CDNSSeedData("emit.xxx", "emit.emit.xxx"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 112); // EMIT pubkey address starts with 'n'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 33); // EMIT pubkey address starts with 'n'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 8); // EMIT P2SH address starts with '4'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 196); // EMIT Private address starts with '2'
 	
