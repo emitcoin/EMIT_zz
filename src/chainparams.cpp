@@ -95,7 +95,7 @@ public:
 	pchMessageStart[3] = 0x04;
 
 	vAlertPubKey = ParseHex("04657d53a6ab79c364955f04c4e8ea299a4ce972d7ce5ef20c782b570105c77ed64c483dc20af25eddfa3f85b95d00f33a6e35dc3ea7655310a3dc2a0c46e6135a");
-	nDefaultPort = 60151;
+	nDefaultPort = 49051;
 	bnProofOfWorkLimit = ~uint256(0) >> 20; // EMIT starting difficulty is 1 / 2^12
 	nMaxReorganizationDepth = 100;
 	nMinerThreads = 0;
@@ -131,7 +131,7 @@ public:
 	assert(genesis.hashMerkleRoot == uint256("0xcd2552728eb8937b197aed49471d95cdb9b1a74e97e204cfdb1bd8c103461cf7"));
 
 	vSeeds.push_back(CDNSSeedData("thesnoot.space", "emit.thesnoot.space"));
-	vSeeds.push_back(CDNSSeedData("nort.network", "emit.nort.network"));
+	vSeeds.push_back(CDNSSeedData("emit.xxx", "emit.emit.xxx"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 112); // EMIT pubkey address starts with 'n'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 8); // EMIT P2SH address starts with '4'
@@ -183,7 +183,7 @@ public:
         pchMessageStart[3] = 0xb0;
 
 	    vAlertPubKey = ParseHex("0418ee48636371ae4300eed0f10434a827ed373e76c415f11fcebd4ee2366e617b195a14c3d62009c516e1d901d04d48e21ddc328881127e0948a0023372f2ed2b");
-        nDefaultPort = 50151;
+        nDefaultPort = 49551;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // 60 Seconds
         nTargetSpacing = 1 * 60;  // 60 Seconds
@@ -207,7 +207,7 @@ public:
     	vSeeds.clear();
 
 	vSeeds.push_back(CDNSSeedData("thesnoot.space", "emittestnet.thesnoot.space"));
-	vSeeds.push_back(CDNSSeedData("nort.network", "emittestnet.nort.network"));
+	vSeeds.push_back(CDNSSeedData("emit.xxx", "emittestnet.emit.xxx"));
 
 	// Using Bitcoin defaults for Testnet
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 111);
