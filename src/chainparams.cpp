@@ -111,24 +111,24 @@ public:
 	nRejectBlockOutdatedMajority = 950;
 	nToCheckBlockUpgradeMajority = 1000;
 
-	const char* pszTimestamp = "Chloe Kim dominates in snowboard halfpipe to win Olympic gold. NBC 12/02/2018";
+	const char* pszTimestamp = "BBC 30/12/2018 Key Italy talks amid fears of snap poll";
 	CMutableTransaction txNew;
 	txNew.vin.resize(1);
 	txNew.vout.resize(1);
 	txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
 	txNew.vout[0].nValue = 10 * COIN;
-	txNew.vout[0].scriptPubKey = CScript() << ParseHex("37346373796a6961314f4e2f30467637376d42346d6a43334653426d512b687142626c37413d3d0a2d2d2d2d2d454e44205055424c4943204b45592d2d2d2d2d0a") << OP_CHECKSIG;
+	txNew.vout[0].scriptPubKey = CScript() << ParseHex("41048e794284ad7e4d776919bda05cdd38447d89b436bdaf5f65ebe9d7ad3a0b084908b88162bb60b1aa5ed6542063a30fc9584a335f656a54cd9f66d6c742b67f55ac") << OP_CHECKSIG;
 	genesis.vtx.push_back(txNew);
 	genesis.hashPrevBlock = 0;
 	genesis.hashMerkleRoot = genesis.BuildMerkleTree();
 	genesis.nVersion = 1;
-	genesis.nTime = 1518556170;
+	genesis.nTime = 1527654365;
 	genesis.nBits = bnProofOfWorkLimit.GetCompact();;
-	genesis.nNonce = 756830;
+	genesis.nNonce = 637886136;
 
 	hashGenesisBlock = genesis.GetHash();
-	assert(hashGenesisBlock == uint256("0x00000e68c6ddd656c615022da9cda3dc1e548288f683a7d496aacc9a77c55b17"));
-	assert(genesis.hashMerkleRoot == uint256("0xcd2552728eb8937b197aed49471d95cdb9b1a74e97e204cfdb1bd8c103461cf7"));
+	assert(hashGenesisBlock == uint256("0x000000009f7b0c7eb9834e0c049f7c0be81f6b352385663cd41b62e1ded79b65"));
+	assert(genesis.hashMerkleRoot == uint256("0xb689d7fceb647ef22e6e9150850ff05223fa320e89fd91456d680c0bd8d8e814"));
 
 	vSeeds.push_back(CDNSSeedData("thesnoot.space", "emit.thesnoot.space"));
 	vSeeds.push_back(CDNSSeedData("emit.xxx", "emit.emit.xxx"));
