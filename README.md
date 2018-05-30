@@ -18,10 +18,10 @@ Darksend: TX Obfuscation
 
 InstantX: SwiftTX
 
-RPC port: - 70050
-P2P port: - 70051
+RPC port: - 49050
+P2P port: - 49051
 
-Testnet RPC port: - 70150
-Testnet P2P port: - 70151
+Testnet RPC port: - 49550
+Testnet P2P port: - 49551
 
 Max coin supply: 6.466.162 EMIT
