@@ -111,7 +111,7 @@ public:
 	nRejectBlockOutdatedMajority = 950;
 	nToCheckBlockUpgradeMajority = 1000;
 
-	const char* pszTimestamp = "Caroline Lucas to step down as Green Party co-leader. BBC 30/05/2018";
+	const char* pszTimestamp = "Chloe Kim dominates in snowboard halfpipe to win Olympic gold. NBC 12/02/2018";
 	CMutableTransaction txNew;
 	txNew.vin.resize(1);
 	txNew.vout.resize(1);
@@ -122,7 +122,7 @@ public:
 	genesis.hashPrevBlock = 0;
 	genesis.hashMerkleRoot = genesis.BuildMerkleTree();
 	genesis.nVersion = 1;
-	genesis.nTime = 1527645389;
+	genesis.nTime = 1518556170;
 	genesis.nBits = bnProofOfWorkLimit.GetCompact();;
 	genesis.nNonce = 756830;
 
@@ -196,7 +196,7 @@ public:
         nToCheckBlockUpgradeMajority = 100;
 
         genesis.nVersion = 1;
-        genesis.nTime = 1527645211;
+        genesis.nTime = 1518558575;
         genesis.nBits = bnProofOfWorkLimit.GetCompact();;
         genesis.nNonce = 62025;
 
